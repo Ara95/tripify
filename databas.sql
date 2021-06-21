@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS tripify;
+
+USE tripify;
+
+CREATE TABLE IF NOT EXISTS `Users` (
+  id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  email varchar(255) NOT NULL,
+  password varchar(255) NOT NULL,
+  name varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `Cities` (
+  id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  cityName varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `DiscountCodes` (
+  id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  discountCode varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
